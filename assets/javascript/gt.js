@@ -51,12 +51,11 @@ $(function() { //-shorthand document.ready
 				$(".rate")
 					.text("Rated: " + rating)
 					.append('<div class="img-class"><img class="image">');
-				// $(".img-class").append('<img class="image">'); 
 				$(".image")
 					.attr("title", 'Rated: ' + rating)
 					.attr("src", freeze)
 					.attr("data-src2", move);
-				console.log($(".img-class > img").length);
+				console.log($(".img-class > img").length); //TODO: resolve the issue of the first image replicated over 10 times instead of showing 10 different gifs 
 
 				// $("#api-results").prepend('<div class="parent"><div class="rate">Rated: '+ rating + '<div class="img-class"><img class="image" title="Rated: ' + rating + '" src="' + freeze + '" data-src2="'+ move + '"></div></div></div>');
 				// console.log($(".parent > div").length);
