@@ -1,0 +1,32 @@
+button,
+div,
+form,
+input {
+  margin: 10px;
+}
+
+.main-container {
+	/*width: 960px;*/
+	margin: 10px;
+}
+
+.the-buttons {
+	width: 70%;
+}
+
+.the-form {
+	width: 30%;
+}
+
+#api-results {
+	width: 70%;
+}
+
+.rate {
+	float: left;
+}
+
+.image {
+	margin-left: -10px;
+	margin-top: -10px;
+}
