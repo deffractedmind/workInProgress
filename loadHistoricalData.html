@@ -60,9 +60,10 @@
 
     // for (i=0; i<blueChip.length; i++) {
     //   var symbol = blueChip[i];
-    var symbol = 'PG' //TODO need to run for PG, exceeded daily api call
+    var symbol = 'XOM' //TODO need to run for PG, exceeded daily api call
 
-    var queryURL = "https://www.quandl.com/api/v3/datasets/WIKI/"+symbol+"/data.json";
+    // var queryURL = "https://www.quandl.com/api/v3/datasets/WIKI/"+symbol+"/data.json";
+    var queryURL = "https://www.quandl.com/api/v3/datasets/WIKI/"+symbol+"/data.json?api_key=B_Dr21TdFHBdjgxzNN2x"
     // var queryURL = 'http://marketdata.websol.barchart.com/getHistory.json?key=174639048fc87707550be4a3a93d635d&symbol=IBM&type=daily&startDate=20000613000000';
       // Performing our AJAX GET request
 
@@ -99,7 +100,7 @@
         	// $('#add-ticker').on("click",function(event){
         	//   event.preventDefault();
 
-        		// //append data into firebaseDB
+        		//append data into firebaseDB
         		database.ref('ticker/'+symbol).push({
         			closeDate: clsDate,
         			closePrice: clsPrice
